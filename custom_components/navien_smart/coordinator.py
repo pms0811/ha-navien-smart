@@ -12,7 +12,7 @@ from homeassistant.helpers.update_coordinator import DataUpdateCoordinator, Upda
 from .api import NavienDevice, NavienSmartApiClient, NavienSmartApiError
 from .const import DOMAIN
 
-SCAN_INTERVAL = timedelta(seconds=60)
+SCAN_INTERVAL = timedelta(seconds=300)
 LOGGER = logging.getLogger(__name__)
 
 
