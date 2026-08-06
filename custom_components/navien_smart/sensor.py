@@ -52,7 +52,7 @@ AIR_SENSOR_DESCRIPTIONS: tuple[NavienSmartSensorDescription, ...] = (
     NavienSmartSensorDescription(key="pm10", name="미세먼지", native_unit="µg/m³"),
     NavienSmartSensorDescription(key="co2", name="이산화탄소", native_unit="ppm"),
     NavienSmartSensorDescription(key="tvoc", name="휘발성 유기화합물", native_unit="µg/m³"),
-    NavienSmartSensorDescription(key="total", name="공기질점수"),
+    NavienSmartSensorDescription(key="total", name="공기질점수", native_unit="pts"),
     NavienSmartSensorDescription(key="radon", name="라돈", native_unit="Bq/m³"),
 )
 
