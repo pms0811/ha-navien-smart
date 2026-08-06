@@ -1257,12 +1257,14 @@ class NavienSmartApiClient:
             return 2
         if text in {"away", "out", "3"}:
             return 3
+        if text in {"4"}:
+            return 4
         return None
 
     @staticmethod
     def _running_name(value: int) -> str:
         """Return display name for a Navien running code."""
-        return {1: "운전", 2: "정지", 3: "외출"}.get(value, f"알 수 없음({value})")
+        return {1: "운전", 2: "정지", 3: "외출", 4: "자동건조"}.get(value, f"알 수 없음({value})")
 
     @classmethod
     def _error_code_from_status(cls, *values: Any) -> int | None:
